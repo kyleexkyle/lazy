@@ -69,7 +69,7 @@ return {
 		vim.keymap.set('n', '<Leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>')
 
 		-- Commands
-		-- vim.api.nvim_create_user_command('Format', vim.lsp.buf.formatting, {})
+		-- vim.api.nvim_create_user_command("Format", vim.lsp.buf.formatting, {})
 
 		-- Diagnostic configuration
 		vim.diagnostic.config({

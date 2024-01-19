@@ -30,8 +30,8 @@ opt.ignorecase = true -- ignore case when searching
 opt.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
 
 
-vim.opt.list = true -- enable the below listchars
-vim.opt.listchars = { tab = '▸ ', trail = '·' }
+-- vim.opt.list = true -- enable the below listchars
+-- vim.opt.listchars = { tab = ' ', trail = '·' }
 vim.opt.fillchars:append({ eob = ' ' }) -- remove the ~ from end of buffer
 
 
@@ -42,7 +42,7 @@ opt.termguicolors = true
 -- opt.background = "dark" -- colorschemes that can be light or dark will be made dark
 opt.signcolumn = "yes:2" -- show sign column so that text doesn't shift
 
--- cursor line 
+-- cursor line
 opt.cursorline = true -- highlight the current cursor line
 
 -- backspace
