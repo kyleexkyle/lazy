@@ -1,10 +1,12 @@
 return {
   "nvim-neotest/neotest",
+  lazy = true,
   dependencies = {
     "nvim-lua/plenary.nvim",
     "antoinemadec/FixCursorHold.nvim",
     "nvim-treesitter/nvim-treesitter",
     "theutz/neotest-pest",
+    "olimorris/neotest-phpunit",
   },
   config = function()
       require('neotest').setup({
@@ -12,7 +14,8 @@ return {
 	      require('neotest-pest')({
 	      pest_cmd = function()
 		return "./vendor/bin/pest"
-	      end
+	      end,
+	  filter_dirs = { "./vendor" },
 	      }),
 	}
       })

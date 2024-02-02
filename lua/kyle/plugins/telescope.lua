@@ -57,6 +57,7 @@ return {
 
 		-- require('telescope').load_extension('fzf')
 		require('telescope').load_extension('live_grep_args')
+		require('telescope').load_extension('noice')
 
 		vim.keymap.set('n', '<leader>f', [[<cmd>lua require('telescope.builtin').find_files()<CR>]])
 		vim.keymap.set('n', '<leader>F', [[<cmd>lua require('telescope.builtin').find_files({ no_ignore = true, prompt_title = 'All Files' })<CR>]])
